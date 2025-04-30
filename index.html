@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body onload="start()">
+    
+    <canvas id="canvas" width="1000" height="480">
+    </canvas>
+
+    <script src="4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+            integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+            crossorigin="anonymous" defer>
+    </script>
+
+    <p>Линейное затухание: </p>
+    <input type="range" id="LightCoeff" min="0.0" value="5.0" max="10.0" step="0.1"/>
+    <p>Квадратичное затухание: </p>
+    <input type="range" id="DistQuadCoeff" min="1.0" value="1.0" max="2.0" step="0.1"/>
+    
+    <p>Шейдинг</p>
+    <p>
+        <label><input type="checkbox" id="GouraudSh" />Гуро</label>
+        <label><input type="checkbox" id="PhongSh" />Фонг</label>
+
+    </p>
+    <p>Освещение</p>
+    <p>
+        <label><input type="checkbox" id="PhongLg" />Фонг</label>
+        <label><input type="checkbox" id="LambertLg" />Ламберт</label>
+    </p>
+
+    
+    
+</body>
+</html>
